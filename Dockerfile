@@ -13,7 +13,6 @@ RUN npm run build
 
 # stage 2 - Serve our application using Nginx
 FROM nginx:alpine as runtime
-LABEL description="play-ess-frontend"
 COPY /nginx.conf /etc/nginx/conf.d/default.conf
 ENV PORT 80
 ENV HOST 0.0.0.0

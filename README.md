@@ -31,8 +31,6 @@ npm start
     /user               # pages for user
     login.js            # everyone can access this page
     resetpassword.js
-  /reducers             # use reducer for state management
-    authReducer.js
   /routes               # control any route
     AuthRoute.js        # Protected route, can access when login
     Routes.js           # Add new route here, recommend to use AuthRoute.js
