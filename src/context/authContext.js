@@ -3,10 +3,9 @@ import { AUTH_ACTION_TYPE } from '../enums';
 import { removeAllLocalStorage } from '../utils/storage';
 import { getToken } from '../utils/token';
 
-const token = getToken();
 //Reducer
 const AUTH_INIT_STATE = {
-  isSignedIn: token ? true : false,
+  isSignedIn: getToken() ? true : false,
   user: null,
 };
 
